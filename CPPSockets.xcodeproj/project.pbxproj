@@ -1,0 +1,272 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DACA72481D2B9BB000577B4B /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DACA72461D2B9BB000577B4B /* TCPClient.cpp */; };
+		DACA72551D2BA45D00577B4B /* main_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DACA72541D2BA45D00577B4B /* main_client.cpp */; };
+		DAD827AA1D2CBA3200856832 /* TCPStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAD827A81D2CBA3200856832 /* TCPStream.cpp */; };
+		DADC69621D2B915E007FC2EC /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DADC69601D2B915E007FC2EC /* TCPServer.cpp */; };
+		DADC69641D2B9174007FC2EC /* main_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DADC69631D2B9174007FC2EC /* main_server.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DADC69541D2B9088007FC2EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DACA72461D2B9BB000577B4B /* TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = TCPClient.cpp; path = Source/TCPClient.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		DACA72471D2B9BB000577B4B /* TCPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; name = TCPClient.hpp; path = Source/TCPClient.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		DACA72541D2BA45D00577B4B /* main_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = main_client.cpp; path = Source/main_client.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		DAD827A81D2CBA3200856832 /* TCPStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPStream.cpp; path = Source/TCPStream.cpp; sourceTree = "<group>"; };
+		DAD827A91D2CBA3200856832 /* TCPStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; name = TCPStream.hpp; path = Source/TCPStream.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		DADC69561D2B9088007FC2EC /* CPPSockets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPSockets; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADC69601D2B915E007FC2EC /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPServer.cpp; path = Source/TCPServer.cpp; sourceTree = "<group>"; };
+		DADC69611D2B915E007FC2EC /* TCPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPServer.hpp; path = Source/TCPServer.hpp; sourceTree = "<group>"; };
+		DADC69631D2B9174007FC2EC /* main_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_server.cpp; path = Source/main_server.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADC69531D2B9088007FC2EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DADC694D1D2B9088007FC2EC = {
+			isa = PBXGroup;
+			children = (
+				DADC69581D2B9088007FC2EC /* CPPSockets */,
+				DADC69571D2B9088007FC2EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DADC69571D2B9088007FC2EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADC69561D2B9088007FC2EC /* CPPSockets */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADC69581D2B9088007FC2EC /* CPPSockets */ = {
+			isa = PBXGroup;
+			children = (
+				DAD827A81D2CBA3200856832 /* TCPStream.cpp */,
+				DAD827A91D2CBA3200856832 /* TCPStream.hpp */,
+				DADC69631D2B9174007FC2EC /* main_server.cpp */,
+				DACA72541D2BA45D00577B4B /* main_client.cpp */,
+				DADC69601D2B915E007FC2EC /* TCPServer.cpp */,
+				DADC69611D2B915E007FC2EC /* TCPServer.hpp */,
+				DACA72461D2B9BB000577B4B /* TCPClient.cpp */,
+				DACA72471D2B9BB000577B4B /* TCPClient.hpp */,
+			);
+			path = CPPSockets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADC69551D2B9088007FC2EC /* CPPSockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADC695D1D2B9088007FC2EC /* Build configuration list for PBXNativeTarget "CPPSockets" */;
+			buildPhases = (
+				DADC69521D2B9088007FC2EC /* Sources */,
+				DADC69531D2B9088007FC2EC /* Frameworks */,
+				DADC69541D2B9088007FC2EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPPSockets;
+			productName = CPPSockets;
+			productReference = DADC69561D2B9088007FC2EC /* CPPSockets */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADC694E1D2B9088007FC2EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dmitry Sokolov";
+				TargetAttributes = {
+					DADC69551D2B9088007FC2EC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DADC69511D2B9088007FC2EC /* Build configuration list for PBXProject "CPPSockets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DADC694D1D2B9088007FC2EC;
+			productRefGroup = DADC69571D2B9088007FC2EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADC69551D2B9088007FC2EC /* CPPSockets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADC69521D2B9088007FC2EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD827AA1D2CBA3200856832 /* TCPStream.cpp in Sources */,
+				DADC69621D2B915E007FC2EC /* TCPServer.cpp in Sources */,
+				DADC69641D2B9174007FC2EC /* main_server.cpp in Sources */,
+				DACA72481D2B9BB000577B4B /* TCPClient.cpp in Sources */,
+				DACA72551D2BA45D00577B4B /* main_client.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DADC695B1D2B9088007FC2EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DADC695C1D2B9088007FC2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DADC695E1D2B9088007FC2EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DADC695F1D2B9088007FC2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADC69511D2B9088007FC2EC /* Build configuration list for PBXProject "CPPSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADC695B1D2B9088007FC2EC /* Debug */,
+				DADC695C1D2B9088007FC2EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADC695D1D2B9088007FC2EC /* Build configuration list for PBXNativeTarget "CPPSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADC695E1D2B9088007FC2EC /* Debug */,
+				DADC695F1D2B9088007FC2EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADC694E1D2B9088007FC2EC /* Project object */;
+}
