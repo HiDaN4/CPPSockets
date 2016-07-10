@@ -21,8 +21,8 @@ TCPServer::TCPServer(int portno, std::string host): port_number(portno), host(ho
 TCPServer::~TCPServer()
 {
      //close connection
-    if (self.sockfd > 0)
-        close(self.sockfd);
+    if (self.socket_fd > 0)
+        close(self.socket_fd);
 }
 
 
@@ -38,9 +38,9 @@ TCPServer::~TCPServer()
  */
 void TCPServer::startServer()
 {
-    self.sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    self.socket_fd = socket(AF_INET, SOCK_STREAM, 0);
     
-    if (self.sockfd < 0)
+    if (self.socket_fd < 0)
         error("ERROR openning Socket!");
     
     
@@ -57,17 +57,17 @@ void TCPServer::startServer()
     
     int optValue = 1;
     
-    setsockopt(self.sockfd, SOL_SOCKET, SO_REUSEADDR, &optValue, sizeof(optValue));
+    setsockopt(self.socket_fd, SOL_SOCKET, SO_REUSEADDR, &optValue, sizeof(optValue));
     
     // start the server
-    int success = bind(self.sockfd, (struct sockaddr *)&self.serv_addr, sizeof(self.serv_addr));
+    int success = bind(self.socket_fd, (struct sockaddr *)&self.serv_addr, sizeof(self.serv_addr));
     
     if (success < 0)
         error("ERROR on binding a socket");
     
     
     // start listening for clients
-    success = listen(self.sockfd, 5);
+    success = listen(self.socket_fd, 5);
     
     if (success != 0) {
         error("ERROR on listening for clients!");
@@ -100,7 +100,7 @@ std::shared_ptr<TCPStream> TCPServer::acceptConnection()
     bzero((struct sockaddr_in*)&client_addr, sizeof(client_addr));
     
     
-    int newsockfd = ::accept(self.sockfd, (struct sockaddr *)&client_addr, &client_len);
+    int newsockfd = ::accept(self.socket_fd, (struct sockaddr *)&client_addr, &client_len);
     
     if ( newsockfd < 0 ) {
         error("ERROR on accept");

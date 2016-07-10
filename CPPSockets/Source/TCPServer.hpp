@@ -23,10 +23,9 @@ extern void error(const std::string&);
 
 class TCPStream;
 
-
 class TCPServer {
 private:
-    int sockfd;                     // file descriptor for this connector
+    int socket_fd;                     // file descriptor for this connector
 
     int port_number;               // port on which the acceptor works
     std::string host;
